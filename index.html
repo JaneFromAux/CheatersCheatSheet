@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CHEATERS' CHEATSHEET</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="parallax">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="assets/html/whyCheating.html">WHY CHEATING?</li></a>
+                    <li><a href="assets/html/theCheaters.html">THE CHEATERS</li></a>
+                </ul>
+            </nav>
+
+            <h1>NEED SOME <span>git --help</span> ?</h1>
+            <h2>DAS ULTIMATIVE CHEATCHEAT FÜR DEIN <span>git checkout </span></h2>
+            <p>Index</p>
+            <ul>
+                <li><a href="#wasIstGit">WAS IST git?!</a></li>
+                <li><a href="#githubVsGit">GITHUB vs git</a></li>
+                <li><a href="#wozuBrauchenWirGit">WOZU BRAUCHEN WIR git?</a></li>
+                <li><a href="#wichtigeBegriffe">WICHTIGE BEGRIFFE ZU git</a></li>
+                <li><a href="#terminalBefehle">git BEFEHLE</a></li>
+                <li><a href="#shell">SHELL BEFEHLE</a></li>
+            </ul>
+        </header>
+        <main>
+            <h2 id="wasIstGit">WAS IST <span>git</span>?!</h2>
+            <p>git ist ein Versionverwaltungstool, das bei jedem comitten eine Art Schnappschuss von
+                deinem Projekt macht. Hinterher hat man einen Stapel von Schnappschüssen.
+            </p>
+            <h2 id="githubVsGit">GITHUB vs <span>git</span></h2>
+            <p>Git und Github sind nicht das gleiche! Git ist ein VSC-Tool und GitHub ist eine Plattform die Git
+                benutzt, es gibt auch andere zb. GitLab, GitBucket, BitBucket, Sourceforge und so weiter. </p>
+            <h2 id="wozuBrauchenWirGit">WOZU BRAUCHEN WIR <span>git</span>?</h2>
+            <p>Git wird überall benutzt und ist eins der wichtigsten Tools für Entwickler geworden. Dadurch können
+                Entwickler von überall zusammenarbeiten.</p>
+            <section>
+                <h2 id="wichtigeBegriffe">WICHTIGE BEGRIFFE ZU <span>git</span></h2>
+                <p>Lokal = Working Directory → Änderungen werden als Modified dargestellt
+                </p>
+                <p>
+                    Staged Area = Index → Daten werden für den commit vorgemerkt sind aber noch nicht hochgeladen
+                </p>
+                <p>.git directory repository → Daten sind von lokal auf git geklont worden und stehen als snapshot
+                    bereit
+                </p>
+                <p>Branching/Merge <a href="https://miro.com/app/board/uXjVO9rmPHw=/"></a>
+                </p>
+            </section>
+
+            <section>
+                <h2 id="terminalBefehle"><span>git</span> BEFEHLE</h2>
+                <h3><span>git init</span></h3>
+                <h4>initialisiert ein lokales git repository</h4>
+                <article>
+                    <h3><span>git add . </span></h3>
+                    <h4>gibt an was alles in den commit rein soll ( . gibt an das alles in den commit sol)
+                    </h4>
+                </article>
+                <h3><span>git commit -m "text"</span></h3>
+                <h4>hinterlegt einen message/commit ( man kann auch sagen erlegt eine version an)
+                </h4>
+                <article>
+                    <h3><span>git push</span></h3>
+                    <h4>schickt das lokale repository in das github repository
+                    </h4>
+                </article>
+                <h3><span>git log</span></h3>
+                <h4>zeigt alle bis dato erstellten commits ausführlich an</h4>
+                <article>
+                    <h3><span>git log --oneline</span></h3>
+                    <h4>zeigt alle die bis dato erstellten commits in kurzform an</h4>
+                </article>
+                <h3><span>git branch "name"</span></h3>
+                <h4>erstellt einen neuen Branch
+                </h4>
+                <article>
+                    <h3><span>git branch -a</span></h3>
+                    <h4>zeigt alle erstellten Branches an</h4>
+                </article>
+                <h3><span>git branch -d "name"</span></h3>
+                <h4>löscht den ausgewählten Branch</h4>
+                <article>
+                    <h3><span>git checkout</span></h3>
+                    <h4>wechseln zwischen den Branches</h4>
+                </article>
+                <h3><span>git pull</span></h3>
+                <h4>lädt die aktuelle Version des Repository von GitHub runter</h4>
+                <article>
+                    <h3><span>git clone</span></h3>
+                    <h4>lädt die aktuelle Version des Repository von GitHub runter</h4>
+                </article>
+                <h3><span>git merge</span></h3>
+                <h4>Ist dafür da um zwei branches zusammenzuführen </h4>
+            </section>
+            <section>
+                <h2 class="left"><span>A</span></h2>
+                <h3>ADDED</h3>
+                <h4 class="pink">Ein neues file wurde zum repository hinzugefügt</h4>
+                <h2 class="right"><span>M</span></h2>
+                <h3 class="right">MODIFIED</h3>
+                <h4>Ein bestehendes file wurde geändert</h4>
+                <h2 class="left"><span>D</span></h2>
+                <h3>DELETE</h3>
+                <h4 class="pink">Ein file wurde gelöscht</h4>
+                <h2 class="right"><span>U</span></h2>
+                <h3 class="right">UNTRACKED</h3>
+                <h4>Das file ist neu oder wurde verändert -wurde jedoch noch nicht zum Repository
+                    hinzugefügt</h4>
+                <h2 class="left"><span>C</span></h2>
+                <h3>CONFLICT</h3>
+                <h4 class="pink">es gibt einen Konflikt in dem file</h4>
+                <h2 class="right"><span>R</span></h2>
+                <h3 class="right">RENAMED</h3>
+                <h4>Das file wurde umbenannt</h4>
+                <h2 class="left"><span>S</span></h2>
+                <h3>SUBMODUL</h3>
+                <h4 class="pink">Im repository existiert ein Subrepository = untergeordnetes Repository</h4>
+            </section>
+            <div id="shell">
+                <h3><span>SHELL</span> BEFEHLE</h3>
+                <article class="left">
+                    <h3><span>touch</span></h3>
+                    <h4 class="aqua">erstellt eine Datei</h4>
+                </article>
+                <article class="right">
+                    <h3><span>mkdir</span></h3>
+                    <h4>= make directory - erstellt einen Ordner</h4>
+                </article>
+                <article class="left">
+                    <h3><span>ls</span></h3>
+                    <h4 class="aqua">= list directory - zeigt alle Dateien im Ordner</h4>
+                </article>
+                <article class="right">
+                    <h3><span>ls -l</span></h3>
+                    <h4>zeigt alle Dateien im Ordner mit Angabe des Erstellungsdatums und des Creators</h4>
+                </article>
+                <article class="left">
+                    <h3><span>ls -a</span></h3>
+                    <h4 class="aqua">zeigt alle Dateien im Ordner plus alle versteckten Dateien</h4>
+                </article>
+                <article class="right">
+                    <h3><span>cd</span></h3>
+                    <h4>= change directory - führt durch die Ordnerstruktur / Navigationsbefehl</h4>
+                </article>
+                <article class="left">
+                    <h3><span>cd</span> + <span>tab</span></h3>
+                    <h4 class="aqua"> die tab-Taste springt durch die Auswahl an anwählbaren Ordnern</h4>
+                </article>
+                <article class="right">
+                    <h3><span>cd /..</span></h3>
+                    <h4> führt einen ordner zurück in der Pfadstruktur</h4>
+                </article>
+                <article class="left">
+                    <h3><span>cat</span></h3>
+                    <h4 class="aqua">öffnet die angesprochene Datei im Terminal/ Lesemodus</h4>
+                </article>
+                <article class="right">
+                    <h3><span>mv</span></h3>
+                    <h4>= move - verschiebt die Datei in der Ordnerstruktur</h4>
+                </article>
+                <article class="left">
+                    <h3><span>mv</span> + <span>Datei</span> + <span>Pfadziel</span></h3>
+                    </h3>
+                    <h4 class="aqua">= move - verschiebt die Datei innerhalb des Ordnersystems</h4>
+                </article>
+                <article class="right">
+                    <h3><span>mv</span> + <span>Ausgangsdatei</span> + <span>neubenannte Datei</span></h3>
+                    <h4>benennt die Datei neu</h4>
+                </article>
+                <article class="left">
+                    <h3><span>cp</span> + <span>Copy Datei</span> + <span>Pfadziel</span></h3>
+                    </h3>
+                    <h4 class="aqua">= copy files and directory - kopiert und verschiebt die Datei</h4>
+                </article>
+                <article class="right">
+                    <h3><span>pwd</span></h3>
+                    <h4>= print working directory - zeigt den aktuellen "standort" im Dateisystem</h4>
+                </article>
+            </div>
+
+        </main>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
